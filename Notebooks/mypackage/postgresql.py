@@ -101,7 +101,10 @@ def uploadDataFrame(df, table):
         conn.commit()
     except psycopg2.Error as e:
         conn.rollback()
-        logMessage(e.pgerror,2)
+        print(e)
+        e.pgerror
+        logMessage("INSERT ERROR",2)
+        #logMessage(e.pgerror,2)
         return 
     except (Exception, psycopg2.DatabaseError) as error:
         conn.rollback()

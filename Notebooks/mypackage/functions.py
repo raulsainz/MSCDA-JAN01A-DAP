@@ -218,11 +218,16 @@ def getWHO_TOKEN():
 # @returns pd.Series: 
 # =============================================================================
 
-def getCauseDeathCategory(row,category,find_words):        
+def getDeathCategories(row,category,find_words):        
         if any(x in row['cause_death'] for x in find_words): 
             return True #if word is found, stops the search and returns True
-        elif any(x in row['wiki'] for x in find_words) and row[category]==False: #if no matching word on 'cause_death', will look for matching words on wikipedia info 
-            return True
+        elif  row[category]==False: #if no matching word on 'cause_death', will look for matching words on wikipedia info 
+            set1 = set(row['wiki_tokens']) 
+            set2 = set(find_words) 
+            if set1.intersection(set2): 
+                return True 
+            else: 
+                return False
         else:
             return False #Not found any matching words on both columns
 

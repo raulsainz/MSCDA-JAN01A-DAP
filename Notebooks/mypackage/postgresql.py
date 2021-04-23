@@ -84,6 +84,7 @@ def getDBStatistics():
 def uploadDataFrame(df, table):
     #Connect to DB
     conn = getPSQLClient()
+    cursor = conn.cursor()
     # Create a list of tupples from the dataframe values
     tuples = [tuple(x) for x in df.to_numpy()]
     # Comma-separated dataframe columns
@@ -92,18 +93,20 @@ def uploadDataFrame(df, table):
     query  = "INSERT INTO %s(%s) VALUES %%s" % (table, cols)   
     try:
         # Open a cursor to perform database operations
-        logMessage("Inserting {} into table {}...".format(len(tuples,table)),4)
-        cursor = conn.cursor()
+        logMessage("Inserting {} into table {}...".format(len(tuples),table),4)
+        
         extras.execute_values(cursor, query, tuples)
+        updated_rows = cursor.rowcount
+        logMessage("Finish inserting - Affected rows: {}".format(updated_rows),1)
         conn.commit()
     except psycopg2.Error as e:
         conn.rollback()
         logMessage(e.pgerror,2)
-        return 1
+        return 
     except (Exception, psycopg2.DatabaseError) as error:
         conn.rollback()
         logMessage("Error: {}".format(error),2)
-        return 1
+        return
     
     finally:
         logMessage("Closing DB connection...".format())
@@ -140,5 +143,70 @@ def getTableToDataframe(table):
     finally:
         logMessage("Closing DB connection...".format())
         del df
+        cursor.close()
+        conn.close()
+
+
+# =============================================================================
+# Upload a data frame to PostgreSQL using psycopg2.extras.execute_values() to insert the dataframe
+# @returns:print list of tables with number or rows
+# =============================================================================
+def createTable(table_name,drop_table=False):
+    #Connect to DB
+    conn = getPSQLClient()
+    # SQL quert to execute
+    if drop_table:
+        logMessage("Dropping table {} !!!".format(table_name),3)
+        drop_command = 'DROP TABLE IF EXISTS {};'.format(table_name)
+    else:
+        drop_command = ''
+    command =  '''{}
+            CREATE TABLE  {}(
+            _id SERIAL PRIMARY KEY,
+            month character(4),
+            age_group varchar(255),
+            education varchar(255),
+            employement varchar(255),
+            marital varchar(255),
+            state_death character(4),
+            type_death varchar(255),
+            place_death varchar(255),
+            icd10_desc varchar(255),
+            icd10_code varchar(3),
+            icd10_group varchar(7),
+            icd10_chapter varchar(7),
+            is_male boolean,
+            is_work_related  boolean,
+            is_foreign boolean,
+            is_pregnant boolean,
+            is_accident boolean,
+            is_cancer boolean,
+            is_CVD boolean,
+            is_diabetes boolean,
+            is_digestive boolean,
+            is_mental boolean,
+            is_pregnancy boolean,
+            is_respiratory boolean,
+            is_virus boolean,
+            is_suicide boolean,
+            is_bacteria boolean
+            )
+            '''.format(drop_command,table_name)
+    try:
+        logMessage("Creating table {} ...".format(table_name),4)
+        cursor = conn.cursor()
+        cursor.execute(command);
+        conn.commit()
+    except psycopg2.Error as e:
+        conn.rollback()
+        logMessage(e.pgerror,2)
+        return 1
+    except (Exception, psycopg2.DatabaseError) as error:
+        conn.rollback()
+        logMessage("Error: {}".format(error),2)
+        return 1
+    
+    finally:
+        logMessage("Closing DB connection...".format())
         cursor.close()
         conn.close()

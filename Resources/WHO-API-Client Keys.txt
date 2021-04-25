@@ -1,0 +1,8 @@
+Client Keys
+[Home Page]
+By default one client Id and client secret is provided to be able to authenticate your software to use the ICD APIs. You may however, add more clients or remove some of them. 
+(IMPORTANT!!! If a client key is removed, clients configured with this Id/secret will not be able access the API anymore)
+
+ClientId: 04d19cc4-f7fe-4efa-a2a4-114407a4590e_1d81f3ed-6d16-4164-8aaa-cf53d3f3674f 
+ClientSecret: UZqwmhaa94sTJ0Qc00AwRSgznNUA8TbaI0c5jbK7m5A= [Remove client]
+[Add a new client]

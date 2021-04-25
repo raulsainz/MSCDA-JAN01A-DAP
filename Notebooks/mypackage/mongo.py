@@ -84,7 +84,7 @@ def testMongoClient(client):
 # @maxWriteBatchSize = number or fows to save at each batch
 # @output: console messages
 # =============================================================================
-def uploadCSV(fileName,dbname,collection,samplesize=0.3,batchSize = 50000):
+def uploadCSV(fileName, dbname, collection, samplesize=1 , batchSize = 50000):
     maxWriteBatchSize = 100000 #maxWriteBatchSize value of 100,000 for MongoDB insert_many()
     try:
         if not all([fileName, dbname, collection]): #Checks if any of the parmeters is empty
@@ -92,7 +92,7 @@ def uploadCSV(fileName,dbname,collection,samplesize=0.3,batchSize = 50000):
         if batchSize > maxWriteBatchSize:
             raise customError("Batch {} Size too large".format(batchSize))
         if not os.path.exists(fileName):
-            raise FileDoesNotExist("File not found, please check") 
+            raise customError("File not found, please check") 
         functions.logMessage("Loading file '{}' into memory...".format(fileName))
         data = pd.read_csv(fileName) 
         numRows = data.shape[0]
@@ -101,7 +101,7 @@ def uploadCSV(fileName,dbname,collection,samplesize=0.3,batchSize = 50000):
         myMongoClient = getMongoClient(dbname)
         db = myMongoClient[dbname]
         collection = db[collection]
-        data = data.sample(frac=samplesize, replace=True, random_state=1)
+        data = data.sample(frac=samplesize, replace=True, random_state=42)
         numRows = data.shape[0]
         functions.logMessage("Sampling file at {:.1f}%  loaded {} registries".format(samplesize*100,numRows),1)
         if not isinstance(myMongoClient,pymongo.mongo_client.MongoClient):
@@ -177,11 +177,11 @@ def getDBStatistics(db='TestDB'):
 # =============================================================================
 def dropCollection(dbname,cname):
     try:
-        txt = 'Are you sure you want to delete collection {}?'.format(cname)
-        if(functions.confirmAction(msg=txt)):
-            raise customError("Drop collection {} from db {} cancelled".format(cname,dbname))
-        if not all([dbname, cname]): #Checks if any of the parmeters is empty
-            raise customError("Empty function parameters")
+        #txt = 'Are you sure you want to delete collection {}?'.format(cname)
+        #if(functions.confirmAction(msg=txt)):
+         #   raise customError("Drop collection {} from db {} cancelled".format(cname,dbname))
+        #if not all([dbname, cname]): #Checks if any of the parmeters is empty
+        #    raise customError("Empty function parameters")
         functions.logMessage("Connecting to mongo DB {} ...".format(dbname))
         myMongoClient = getMongoClient(dbname)
         db = myMongoClient[dbname]

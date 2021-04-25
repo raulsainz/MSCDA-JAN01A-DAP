@@ -94,10 +94,9 @@ def uploadDataFrame(df, table):
     try:
         # Open a cursor to perform database operations
         logMessage("Inserting {} into table {}...".format(len(tuples),table),4)
-        
         extras.execute_values(cursor, query, tuples)
         updated_rows = cursor.rowcount
-        logMessage("Finish inserting - Affected rows: {}".format(updated_rows),1)
+        logMessage("Finish inserting - processed batches: {}".format(updated_rows),1)
         conn.commit()
     except psycopg2.Error as e:
         conn.rollback()
@@ -115,7 +114,11 @@ def uploadDataFrame(df, table):
         logMessage("Closing DB connection...".format())
         cursor.close()
         conn.close()
-
+# =============================================================================
+# Get SQL Data into pandas data frame using psycopg2
+# @table str: table name to retrive
+# @returns:Pandas.DataFrame
+# =============================================================================
 
 def getTableToDataframe(table):
     #Tranform a SELECT query into a pandas dataframe
@@ -151,8 +154,9 @@ def getTableToDataframe(table):
 
 
 # =============================================================================
-# Upload a data frame to PostgreSQL using psycopg2.extras.execute_values() to insert the dataframe
-# @returns:print list of tables with number or rows
+# Creates Table on PostreSQL
+# @table_name str: name of the table where the data will be inserted
+# @drop_table bool: Delete existing table
 # =============================================================================
 def createTable(table_name,drop_table=False):
     #Connect to DB
@@ -160,11 +164,11 @@ def createTable(table_name,drop_table=False):
     # SQL quert to execute
     if drop_table:
         logMessage("Dropping table {} !!!".format(table_name),3)
-        drop_command = 'DROP TABLE IF EXISTS {};'.format(table_name)
+        drop_command = 'DROP TABLE IF EXISTS {}; update public.icd_10_chapters set counter_mx = 0;'.format(table_name)
     else:
         drop_command = ''
-    command =  '''{}
-            CREATE TABLE  {}(
+    command =  '''{drop}
+            CREATE TABLE  {table}(
             _id SERIAL PRIMARY KEY,
             month character(4),
             age_group varchar(255),
@@ -174,6 +178,7 @@ def createTable(table_name,drop_table=False):
             state_death character(4),
             type_death varchar(255),
             place_death varchar(255),
+            icd10_block numeric,
             icd10_desc varchar(255),
             icd10_code varchar(3),
             icd10_group varchar(7),
@@ -193,8 +198,11 @@ def createTable(table_name,drop_table=False):
             is_virus boolean,
             is_suicide boolean,
             is_bacteria boolean
-            )
-            '''.format(drop_command,table_name)
+            );
+            CREATE TRIGGER update_mex_count AFTER INSERT ON {table}
+            FOR EACH ROW
+            EXECUTE PROCEDURE increase_mex_count();
+            '''.format(drop = drop_command,table = table_name)
     try:
         logMessage("Creating table {} ...".format(table_name),4)
         cursor = conn.cursor()
@@ -206,7 +214,7 @@ def createTable(table_name,drop_table=False):
         return 1
     except (Exception, psycopg2.DatabaseError) as error:
         conn.rollback()
-        logMessage("Error: {}".format(error),2)
+        logMessage("ERROR: {}".format(error),2)
         return 1
     
     finally:

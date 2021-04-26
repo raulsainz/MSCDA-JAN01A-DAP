@@ -17,11 +17,11 @@
     <a href="https://github.com/raulsainz/MSCDA-JAN01A-DAP"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/raulsainz">Raul Sainz (x19158696@student.ncirl.ie)</a>
+    <a href="https://github.com/raulsainz">Raul Sainz (19158696)</a>
     ·
-    <a href="https://github.com/sadhvidubey22">Sadhvi Rajkumar (x19199350@student.ncirl.ie)</a>
+    <a href="https://github.com/sadhvidubey22">Sadhvi Rajkumar (19199350)</a>
     ·
-    <a href="https://github.com/tejveersinghgoraya">Tejveer Singh (x19202687@student.ncirl.ie)</a>
+    <a href="https://github.com/tejveersinghgoraya">Tejveer Singh (19202687)</a>
   </p>
 </p>
 
@@ -41,15 +41,11 @@
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#Running VM Instances">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
 
@@ -104,10 +100,16 @@ Libraries dependencies
     import nltk                     #ligrary for naturale language processing
     import string
   ```
-
-
+### Data Base Infraestructure
+* DB1 - MongoDB Atlas (24/ availability)
+* DB2 - PostgreSQL, Running on Azure VM (restricted availability)
 
 <!-- LICENSE -->
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
+
+## Contact
+* Raul Sainz - x19158696@student.ncirl.ie
+* Sadhvi Rajkumar - x19199350@student.ncirl.ie
+* Tejveer Singh - x19202687@student.ncirl.ie

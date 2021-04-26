@@ -27,7 +27,7 @@ Sadhvi Dubey
 <br />
 <p align="center">
   <a href="https://www.ncirl.ie">
-    <img src="resources/images/NCIRL-logo.png" alt="Logo" width="80" height="80">
+    <img src="Resources/images/NCIRL-logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center"></h3>

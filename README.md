@@ -10,8 +10,12 @@
     <img src="Resources/images/NCIRL-logo.png" alt="NCIRL Logo"  width="200">
   </a>
 
-  <h3 align="center">DAP Final Project 2021</h3>
-  <h2>Mortality before COVID-19</h2>
+  <h3 align="center">DAP Final Project 2021 - Group #25</h3>
+  <h2>[10:31 PM] Tejveer Singh Goraya
+    
+Assessing the natural causes of mortality based on Healthcare Expenditure of nations in 2019
+
+</h2>
   <p align="center">
     <a href="https://github.com/raulsainz">Raul Sainz (19158696)</a>
     ·
@@ -77,10 +81,12 @@ Major frameworks used to built the project
     │   ├── DS03-Pre-Processing.ipynb       # Notebook - Tejveer Singh (19202687)
     │   └── Final-Merged.ipynb              # Final Notebook with Merged Data and visualizations
     ├── Datasets                            # Documentation files (alternatively `doc`)
-    │   ├── DS01-Mex                        # Mexico Mortality 2019
-    │   └── DC02-Us                         # US Mortality 2019
+    │   ├── DS01-Mexico                     # Mexico Mortality 2019
+    │   ├── DS02-US                         # US Mortality 2019
+    │   └── DC03-World                      # World Mortality
     ├── Resources                           # PDF and images
-    ├── Report                              # Final PDF Report
+    ├── Report                              
+    │   └── DAP-Project-Report.pdf          # Final PDF Report
     ├── prerequisites.py                    # Script to install all libraries used in Notebooks 
     ├── LICENSE
     └── README.md

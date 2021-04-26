@@ -7,7 +7,7 @@
 <br />
 <p align="center">
   <a href="https://www.ncirl.ie">
-    <img src="Resources/images/NCIRL-logo.png" alt="NCIRL Logo">
+    <img src="Resources/images/NCIRL-logo.png" alt="NCIRL Logo"  width="120">
   </a>
 
   <h3 align="center">DAP Final Project 2021</h3>
@@ -43,10 +43,10 @@
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
       </ul>
-      <a href="#Infraestructure">Getting Started</a>
+      <a href="#Infraestructure">Infraestructure</a>
       <ul>
-        <li><a href="#Database 1">Installation</a></li>
-        <li><a href="#Database 2">Installation</a></li>
+        <li><a href="#Database 1">Database 1 - MongoDB</a></li>
+        <li><a href="#Database 2">Database 2 - PostgreSQL</a></li>
       </ul>
     </li>
     <li><a href="#license">License</a></li>

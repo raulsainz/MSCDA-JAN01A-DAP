@@ -178,6 +178,7 @@ def createTable(table_name,drop_table=False):
             state_death character(4),
             type_death varchar(255),
             place_death varchar(255),
+            sex text,
             icd10_block numeric,
             icd10_desc varchar(255),
             icd10_code varchar(3),

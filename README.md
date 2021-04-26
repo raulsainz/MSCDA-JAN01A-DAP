@@ -80,8 +80,8 @@ Major frameworks used to built the project
     .
     ├── Notebooks                           # Project Notebooks
     │   ├── DS01-Pre-Processing.ipynb       # Raul Sainz (19158696)
-    │   └── DS02-Pre-Processing.ipynb       # Notebook - Sadhvi Rajkumar (19199350)
-    │   └── DS03-Pre-Processing.ipynb       # Notebook - Tejveer Singh (19202687)
+    │   ├── DS02-Pre-Processing.ipynb       # Notebook - Sadhvi Rajkumar (19199350)
+    │   ├── DS03-Pre-Processing.ipynb       # Notebook - Tejveer Singh (19202687)
     │   └── Final-Merged.ipynb              # Final Notebook with Merged Data and visualizations
     ├── Datasets                            # Documentation files (alternatively `doc`)
     │   ├── DS01-Mex                        # Mexico Mortality 2019

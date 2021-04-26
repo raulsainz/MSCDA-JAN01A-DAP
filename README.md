@@ -66,10 +66,11 @@ from processing the initial datasets) for a further analysis of the resultant da
 
 ### Built With
 
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+Major frameworks used to built the project
 * [Python 3.7](https://www.python.org)
 * [Jupyter Notebook](https://jupyter.org)
 * [Anaconda](https://www.anaconda.com)
+* [Visual Studio Code](https://code.visualstudio.com)
 
 
 

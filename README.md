@@ -31,7 +31,7 @@
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
-        <li><a href="#Folder Content">Built With</a></li>
+        <li><a href="#Folder-Content">Folder Content</a></li>
       </ul>
     </li>
     <li>
@@ -41,8 +41,8 @@
       </ul>
       <a href="#Infraestructure">Infraestructure</a>
       <ul>
-        <li><a href="#Database 1">Database 1 - MongoDB</a></li>
-        <li><a href="#Database 2">Database 2 - PostgreSQL</a></li>
+        <li><a href="#Database-1">Database 1 - MongoDB</a></li>
+        <li><a href="#Database-2">Database 2 - PostgreSQL</a></li>
       </ul>
     </li>
     <li><a href="#license">License</a></li>

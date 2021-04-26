@@ -88,8 +88,8 @@ Major frameworks used to built the project
 ### Prerequisites
 * Internet connection
 * Pyton > 3.7
-* Run prerequisites.py to install all the necesary libraries used in notebooks.
-* Python Libraries (run prerequisites.py)
+* Run `prerequisites.py` to install all the necesary libraries used in notebooks.
+* Python Libraries (run `prerequisites.py`)
   ```sh
     import pandas                   #data analysis and manipulation tool
     import psycopg2                 #Library for connection to PostgreSQL

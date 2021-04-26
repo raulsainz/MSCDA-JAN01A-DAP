@@ -11,10 +11,8 @@
   </a>
 
   <h3 align="center">DAP Final Project 2021 - Group #25</h3>
-  <h2>[10:31 PM] Tejveer Singh Goraya
-    
+  <h2>   
 Assessing the natural causes of mortality based on Healthcare Expenditure of nations in 2019
-
 </h2>
   <p align="center">
     <a href="https://github.com/raulsainz">Raul Sainz (19158696)</a>

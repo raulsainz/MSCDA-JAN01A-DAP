@@ -54,9 +54,9 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-A country's healthcare expenditure plays a major role in the physical and mental well-being of its society and the future generation.As the impact of covid-19(since it mainstream coverage from 2020) has been extensively researched upon throughout the world. This report aims to analyze the major causes of mortality before covid-19 impacted the world and how healthcare expenditure influence the mortality of a nation.
-
+<p>
+A country's healthcare expenditure plays a major role in the physical and mental well-being of its society and the future generation.As the impact of covid-19(since it mainstream coverage from 2020) has been extensively researched upon throughout the world. This report aims to analyze the major causes of <b>mortality before covid-19</b> impacted the world and how healthcare expenditure influence the mortality of a nation.
+</p>
 ### Built With
 
 Major frameworks used to built the project
@@ -87,25 +87,27 @@ Major frameworks used to built the project
 
 ### Prerequisites
 * Internet connection
-* Pyton >3.7
-* Python Libraries
+* Pyton > 3.7
+* Run prerequisites.py to install all the necesary libraries used in notebooks.
+* Python Libraries (run prerequisites.py)
   ```sh
-    import pandas
-    import psycopg2                   #Library for setting up the connection to PostgreSQL
-    import psycopg2.extras as extras 
+    import pandas                   #data analysis and manipulation tool
+    import psycopg2                 #Library for connection to PostgreSQL
     import pymongo                  #MongoDB Driver
-    import pymongo.errors 
+    import pymongo.errors           #mongo errors and exceptions
     import urllib                   #Library to url encode the password
     import os                       #os library to interact with host OS
-    import math
+    import math                     #perforn math operations
     import termcolor                #Function to print console message with colors
     import datetime                 #Library for getting tim
     import requests                 #Library allows to send send HTTP requests
     import urllib                   #Library to make URL request to Wikipedia API
-    import matplotlib
-    import seaborn
+    import matplotlib               #data visualization library 
+    import seaborn                  #data visualization library 
     import nltk                     #ligrary for naturale language processing
-    import string
+    import bs4                      #Beautiful Soup web scrapping
+    import json                     #JSON formmat manipulation
+    import string                   # Common string operations¶
   ```
 ## Infraestructure
 ### Database 1

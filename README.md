@@ -1,27 +1,7 @@
-# MSCDA-JAN01A-DAP
-
-#Contributors
-Raul Sainz
-Tejveer Singh Goraya
-Sadhvi Dubey
-
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
+# Master of Science in Data Analytics
+## Database & Analytics Programming (MSCDAD_JAN21A_I)
+* Dr. Athanasios Staikopoulos
+* Athanasios.Staikopoulos@ncirl.ie
 
 <!-- PROJECT LOGO -->
 <br />
@@ -30,10 +10,10 @@ Sadhvi Dubey
     <img src="Resources/images/NCIRL-logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center"></h3>
+  <h3 align="center">DAP Final Project 2021</h3>
 
   <p align="center">
-    Database & Analytics Programming (MSCDAD_JAN21A_I)
+    
     <br />
     <a href="https://github.com/raulsainz/MSCDA-JAN01A-DAP"><strong>Explore the docs »</strong></a>
     <br />

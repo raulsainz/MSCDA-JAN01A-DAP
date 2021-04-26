@@ -10,11 +10,12 @@
     <img src="Resources/images/NCIRL-logo.png" alt="NCIRL Logo"  width="200">
   </a>
 
-  <h3 align="center">DAP Final Project 2021 - Group #25</h3>
-  <h2>   
+  <h2 align="center">DAP Final Project 2021</h2>
+  <h3 align="center">   
 Assessing the natural causes of mortality based on Healthcare Expenditure of nations in 2019
-</h2>
+</h3>
   <p align="center">
+    <b>Group #25</b>
     <a href="https://github.com/raulsainz">Raul Sainz (19158696)</a>
     ·
     <a href="https://github.com/sadhvidubey22">Sadhvi Rajkumar (19199350)</a>

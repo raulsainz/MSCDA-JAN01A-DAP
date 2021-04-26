@@ -13,7 +13,6 @@
   <h3 align="center">DAP Final Project 2021</h3>
 
   <p align="center">
-    
     <br />
     <a href="https://github.com/raulsainz/MSCDA-JAN01A-DAP"><strong>Explore the docs »</strong></a>
     <br />
@@ -81,8 +80,7 @@ This section should list any major frameworks that you built your project using.
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+The project contains 4 Notebooks
 
 ### Prerequisites
 
@@ -108,3 +106,8 @@ Libraries dependencies
   ```
 
 
+
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.

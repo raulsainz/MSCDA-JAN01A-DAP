@@ -81,6 +81,7 @@ Major frameworks used to built the project
     │   └── DC02-Us                         # US Mortality 2019
     ├── Resources                           # PDF and images
     ├── Report                              # Final PDF Report
+    ├── prerequisites.py                    # Script to install all libraries used in Notebooks 
     ├── LICENSE
     └── README.md
 

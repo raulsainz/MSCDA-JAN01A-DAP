@@ -11,7 +11,7 @@
   </a>
 
   <h3 align="center">DAP Final Project 2021</h3>
-
+  <h2>Mortality before COVID-19</h2>
   <p align="center">
     <a href="https://github.com/raulsainz">Raul Sainz (19158696)</a>
     ·
@@ -55,15 +55,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Your project must incorporate the following elements/tasks:
-1. Three or four semi-structured datasets must be used, depending on whether there are 3 or 4
-members in each group.
-2. Datasets must be programmatically stored in appropriate database(s) prior to processing.
-3. Programmatic pre-processing, transformation, analysis and visualisation of the data.
-4. Programmatically storing the processed output data in appropriate databases.
-5. Programmatically create a dataset that joins together the initial datasets (or data resulting
-from processing the initial datasets) for a further analysis of the resultant dataset.
-6. Report writing.
+A country's healthcare expenditure plays a major role in the physical and mental well-being of its society and the future generation.As the impact of covid-19(since it mainstream coverage from 2020) has been extensively researched upon throughout the world. This report aims to analyze the major causes of mortality before covid-19 impacted the world and how healthcare expenditure influence the mortality of a nation.
 
 ### Built With
 
@@ -94,9 +86,9 @@ Major frameworks used to built the project
 
 
 ### Prerequisites
-
-Python Libraries
-* npm
+* Internet connection
+* Pyton >3.7
+* Python Libraries
   ```sh
     import pandas
     import psycopg2                   #Library for setting up the connection to PostgreSQL

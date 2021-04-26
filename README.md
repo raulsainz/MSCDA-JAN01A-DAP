@@ -7,7 +7,7 @@
 <br />
 <p align="center">
   <a href="https://www.ncirl.ie">
-    <img src="Resources/images/NCIRL-logo.png" alt="Logo" width="80" height="80">
+    <img src="Resources/images/NCIRL-logo.png" alt="NCIRL Logo">
   </a>
 
   <h3 align="center">DAP Final Project 2021</h3>
@@ -35,13 +35,18 @@
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
+        <li><a href="#Folder Content">Built With</a></li>
       </ul>
     </li>
     <li>
       <a href="#Folder Content">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#Running VM Instances">Installation</a></li>
+      </ul>
+      <a href="#Infraestructure">Getting Started</a>
+      <ul>
+        <li><a href="#Database 1">Installation</a></li>
+        <li><a href="#Database 2">Installation</a></li>
       </ul>
     </li>
     <li><a href="#license">License</a></li>
@@ -79,7 +84,7 @@ Major frameworks used to built the project
 
     .
     ├── Notebooks                           # Project Notebooks
-    │   ├── DS01-Pre-Processing.ipynb       # Raul Sainz (19158696)
+    │   ├── DS01-Pre-Processing.ipynb       # Notebook - Raul Sainz (19158696)
     │   ├── DS02-Pre-Processing.ipynb       # Notebook - Sadhvi Rajkumar (19199350)
     │   ├── DS03-Pre-Processing.ipynb       # Notebook - Tejveer Singh (19202687)
     │   └── Final-Merged.ipynb              # Final Notebook with Merged Data and visualizations
@@ -94,7 +99,7 @@ Major frameworks used to built the project
 
 ### Prerequisites
 
-Libraries dependencies
+Python Libraries
 * npm
   ```sh
     import pandas
@@ -114,9 +119,28 @@ Libraries dependencies
     import nltk                     #ligrary for naturale language processing
     import string
   ```
-### Data Base Infraestructure
-* DB1 - MongoDB Atlas (24/ availability)
-* DB2 - PostgreSQL, Running on Azure VM (restricted availability)
+## Infraestructure
+### Database 1
+MongoDB Atlas (24/7 availability)
+* DB Engine: Mongo DB Atlas
+* Region: AZURE Ireland (northeurope)
+* Version 4.4.4
+* Cluster name: ClusterDAP
+* Tier: M0 Sandbox (General)
+* vCPU: Shared
+* RAM: Shared
+* Storage: 512 MB
+### Database 2
+Running on Azure VM (restricted availability, please contact Team before running the notebooks to start VM)
+* DB Engine: PostgreSQL
+* DB Version: 11.11
+* Infraestructure: Microsoft AZURE
+* Location: West Europe
+* VM Size: Standard 
+* OS: Linux (debian 10.9)
+* vCPU: 1 vcpus
+* Memory: 1 GiB
+* Storage: 30 GB
 
 <!-- LICENSE -->
 ## License

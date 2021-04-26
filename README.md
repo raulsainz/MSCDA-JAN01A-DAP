@@ -10,9 +10,12 @@
     <img src="Resources/images/NCIRL-logo.png" alt="NCIRL Logo"  width="200">
   </a>
 
-  <h3 align="center">DAP Final Project 2021</h3>
-
+  <h2 align="center">DAP Final Project 2021</h2>
+  <h3 align="center">   
+Assessing the natural causes of mortality based on Healthcare Expenditure of nations in 2019
+</h3>
   <p align="center">
+    <b>Group #25</b>
     <a href="https://github.com/raulsainz">Raul Sainz (19158696)</a>
     ·
     <a href="https://github.com/sadhvidubey22">Sadhvi Rajkumar (19199350)</a>
@@ -54,17 +57,9 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-Your project must incorporate the following elements/tasks:
-1. Three or four semi-structured datasets must be used, depending on whether there are 3 or 4
-members in each group.
-2. Datasets must be programmatically stored in appropriate database(s) prior to processing.
-3. Programmatic pre-processing, transformation, analysis and visualisation of the data.
-4. Programmatically storing the processed output data in appropriate databases.
-5. Programmatically create a dataset that joins together the initial datasets (or data resulting
-from processing the initial datasets) for a further analysis of the resultant dataset.
-6. Report writing.
-
+<p>
+A country's healthcare expenditure plays a major role in the physical and mental well-being of its society and the future generation.As the impact of covid-19(since it mainstream coverage from 2020) has been extensively researched upon throughout the world. This report aims to analyze the major causes of <b>mortality before covid-19</b> impacted the world and how healthcare expenditure influence the mortality of a nation.
+</p>
 ### Built With
 
 Major frameworks used to built the project
@@ -85,35 +80,40 @@ Major frameworks used to built the project
     │   ├── DS03-Pre-Processing.ipynb       # Notebook - Tejveer Singh (19202687)
     │   └── Final-Merged.ipynb              # Final Notebook with Merged Data and visualizations
     ├── Datasets                            # Documentation files (alternatively `doc`)
-    │   ├── DS01-Mex                        # Mexico Mortality 2019
-    │   └── DC02-Us                         # US Mortality 2019
+    │   ├── DS01-Mexico                     # Mexico Mortality 2019
+    │   ├── DS02-US                         # US Mortality 2019
+    │   └── DC03-World                      # World Mortality
     ├── Resources                           # PDF and images
-    ├── Report                              # Final PDF Report
+    ├── Report                              
+    │   └── DAP-Project-Report.pdf          # Final PDF Report
+    ├── prerequisites.py                    # Script to install all libraries used in Notebooks 
     ├── LICENSE
     └── README.md
 
 
 ### Prerequisites
-
-Python Libraries
-* npm
+* Internet connection
+* Pyton > 3.7
+* Run `prerequisites.py` to install all the necesary libraries used in notebooks.
+* Python Libraries (run `prerequisites.py`)
   ```sh
-    import pandas
-    import psycopg2                   #Library for setting up the connection to PostgreSQL
-    import psycopg2.extras as extras 
+    import pandas                   #data analysis and manipulation tool
+    import psycopg2                 #Library for connection to PostgreSQL
     import pymongo                  #MongoDB Driver
-    import pymongo.errors 
+    import pymongo.errors           #mongo errors and exceptions
     import urllib                   #Library to url encode the password
     import os                       #os library to interact with host OS
-    import math
+    import math                     #perforn math operations
     import termcolor                #Function to print console message with colors
     import datetime                 #Library for getting tim
     import requests                 #Library allows to send send HTTP requests
     import urllib                   #Library to make URL request to Wikipedia API
-    import matplotlib
-    import seaborn
+    import matplotlib               #data visualization library 
+    import seaborn                  #data visualization library 
     import nltk                     #ligrary for naturale language processing
-    import string
+    import bs4                      #Beautiful Soup web scrapping
+    import json                     #JSON formmat manipulation
+    import string                   # Common string operations¶
   ```
 ## Infraestructure
 ### Database 1

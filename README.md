@@ -38,7 +38,7 @@
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#Folder Content">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#Running VM Instances">Installation</a></li>
@@ -74,10 +74,23 @@ Major frameworks used to built the project
 
 
 
-<!-- GETTING STARTED -->
-## Getting Started
+<!-- FOLDER CONTENT-->
+## Folder Content
 
-The project contains 4 Notebooks
+    .
+    ├── Notebooks                           # Project Notebooks
+    │   ├── DS01-Pre-Processing.ipynb       # Raul Sainz (19158696)
+    │   └── DS02-Pre-Processing.ipynb       # Notebook - Sadhvi Rajkumar (19199350)
+    │   └── DS03-Pre-Processing.ipynb       # Notebook - Tejveer Singh (19202687)
+    │   └── Final-Merged.ipynb              # Final Notebook with Merged Data and visualizations
+    ├── Datasets                            # Documentation files (alternatively `doc`)
+    │   ├── DS01-Mex                        # Mexico Mortality 2019
+    │   └── DC02-Us                         # US Mortality 2019
+    ├── Resources                           # PDF and images
+    ├── Report                              # Final PDF Report
+    ├── LICENSE
+    └── README.md
+
 
 ### Prerequisites
 

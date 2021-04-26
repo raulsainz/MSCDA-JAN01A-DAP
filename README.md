@@ -7,16 +7,12 @@
 <br />
 <p align="center">
   <a href="https://www.ncirl.ie">
-    <img src="Resources/images/NCIRL-logo.png" alt="NCIRL Logo"  width="120">
+    <img src="Resources/images/NCIRL-logo.png" alt="NCIRL Logo"  width="200">
   </a>
 
   <h3 align="center">DAP Final Project 2021</h3>
 
   <p align="center">
-    <br />
-    <a href="https://github.com/raulsainz/MSCDA-JAN01A-DAP"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
     <a href="https://github.com/raulsainz">Raul Sainz (19158696)</a>
     ·
     <a href="https://github.com/sadhvidubey22">Sadhvi Rajkumar (19199350)</a>

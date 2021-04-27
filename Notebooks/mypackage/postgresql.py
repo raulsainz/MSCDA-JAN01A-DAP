@@ -14,6 +14,8 @@ import math
 import pandas as pd
 from  mypackage.functions import logMessage
 from  mypackage.classes import customError
+import warnings
+warnings.filterwarnings("ignore")
 # =============================================================================
 # DB Configuration variables
 # =============================================================================
@@ -140,7 +142,7 @@ def getTableToDataframe(table):
         tupples = cursor.fetchall() 
         # Plug tuples into pandas dataframe
         df = pd.DataFrame(tupples,columns=column_names)
-        logMessage("Sucesfully importred {} into dataframe columns: {} - rows: {}".format(table,df.shape[1],df.shape[0]),1)
+        logMessage("Succesfully importred {} into dataframe columns: {} - rows: {}".format(table,df.shape[1],df.shape[0]),1)
         return df
     except (Exception, psycopg2.DatabaseError) as error:
         logMessage("Error: %s" % error,2)
@@ -172,6 +174,7 @@ def createTable(table_name,drop_table=False):
             _id SERIAL PRIMARY KEY,
             month character(4),
             age_group varchar(255),
+            age_group2 varchar(255),
             education varchar(255),
             employement varchar(255),
             marital varchar(255),

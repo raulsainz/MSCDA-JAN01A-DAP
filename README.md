@@ -16,7 +16,7 @@
     <b>Group #25</b>
     <a href="https://github.com/raulsainz">Raul Sainz (19158696)</a>
     ·
-    <a href="https://github.com/sadhvidubey22">Sadhvi Rajkumar (19199350)</a>
+    <a href="https://github.com/sadhvidubey22">Sadhvi Dubey (19199350)</a>
     ·
     <a href="https://github.com/tejveersinghgoraya">Tejveer Singh (19202687)</a>
   </p>
@@ -150,5 +150,5 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 * Raul Sainz - x19158696@student.ncirl.ie
-* Sadhvi Rajkumar - x19199350@student.ncirl.ie
+* Sadhvi Dubey - x19199350@student.ncirl.ie
 * Tejveer Singh - x19202687@student.ncirl.ie

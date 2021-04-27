@@ -11,9 +11,7 @@
   </a>
 
   <h2 align="center">DAP Final Project 2021</h2>
-  <h3 align="center">   
-Assessing the natural causes of mortality based on Healthcare Expenditure of nations in 2019
-</h3>
+  <h3 align="center">Assessing the natural causes of mortality based on Healthcare Expenditure of nations in 2019</h3>
   <p align="center">
     <b>Group #25</b>
     <a href="https://github.com/raulsainz">Raul Sainz (19158696)</a>
@@ -33,6 +31,7 @@ Assessing the natural causes of mortality based on Healthcare Expenditure of nat
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
+        <li><a href="#Video Presentation">Video Presentation</a></li>
         <li><a href="#built-with">Built With</a></li>
         <li><a href="#Folder-Content">Folder Content</a></li>
       </ul>
@@ -60,6 +59,12 @@ Assessing the natural causes of mortality based on Healthcare Expenditure of nat
 <p>
 A country's healthcare expenditure plays a major role in the physical and mental well-being of its society and the future generation.As the impact of covid-19(since it mainstream coverage from 2020) has been extensively researched upon throughout the world. This report aims to analyze the major causes of <b>mortality before covid-19</b> impacted the world and how healthcare expenditure influence the mortality of a nation.
 </p>
+
+### Video Presentation
+
+<a href="https://web.microsoftstream.com/video/ef1374fd-919a-4a49-bcbf-dbae74212a24">Final Video</a>
+<iframe width="640" height="360" src="https://web.microsoftstream.com/embed/video/ef1374fd-919a-4a49-bcbf-dbae74212a24?autoplay=false&amp;showinfo=true" allowfullscreen style="border:none;"></iframe>
+
 ### Built With
 
 Major frameworks used to built the project
@@ -71,7 +76,7 @@ Major frameworks used to built the project
 
 
 <!-- FOLDER CONTENT-->
-## Folder Content
+### Folder Content
 
     .
     ├── Notebooks                           # Project Notebooks
@@ -96,6 +101,7 @@ Major frameworks used to built the project
 * Pyton > 3.7
 * Run `prerequisites.py` to install all the necesary libraries used in notebooks.
 * Python Libraries (run `prerequisites.py`)
+* [Prerequisites.py](prerequisites.py)
   ```sh
     import pandas                   #data analysis and manipulation tool
     import psycopg2                 #Library for connection to PostgreSQL
@@ -137,7 +143,6 @@ Running on Azure VM (restricted availability, please contact Team before running
 * vCPU: 1 vcpus
 * Memory: 1 GiB
 * Storage: 30 GB
-
 <!-- LICENSE -->
 ## License
 

@@ -62,7 +62,7 @@ A country's healthcare expenditure plays a major role in the physical and mental
 
 ### Video Presentation
 
-<a href="https://youtu.be/tuPBDi00Bus">Final Video</a>
+<a href="https://youtu.be/tuPBDi00Bus">Video Presentation</a>
 
 ### Built With
 

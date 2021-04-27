@@ -130,7 +130,6 @@ MongoDB Atlas (24/7 availability)
 * vCPU: Shared
 * RAM: Shared
 * Storage: 512 MB
-* [DB dump](Resources/dap_sql_dump.sql)
 
 ### Database 2
 Running on Azure VM (restricted availability, please contact Team before running the notebooks to start VM)
@@ -143,6 +142,7 @@ Running on Azure VM (restricted availability, please contact Team before running
 * vCPU: 1 vcpus
 * Memory: 1 GiB
 * Storage: 30 GB
+* [DB dump](Resources/dap_sql_dump.sql)
 <!-- LICENSE -->
 ## License
 

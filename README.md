@@ -63,7 +63,6 @@ A country's healthcare expenditure plays a major role in the physical and mental
 ### Video Presentation
 
 <a href="https://web.microsoftstream.com/video/ef1374fd-919a-4a49-bcbf-dbae74212a24">Final Video</a>
-<iframe width="640" height="360" src="https://web.microsoftstream.com/embed/video/ef1374fd-919a-4a49-bcbf-dbae74212a24?autoplay=false&amp;showinfo=true" allowfullscreen style="border:none;"></iframe>
 
 ### Built With
 
@@ -99,9 +98,8 @@ Major frameworks used to built the project
 ### Prerequisites
 * Internet connection
 * Pyton > 3.7
-* Run `prerequisites.py` to install all the necesary libraries used in notebooks.
-* Python Libraries (run `prerequisites.py`)
-* [Prerequisites.py](prerequisites.py)
+* Run `[Prerequisites.py](prerequisites.py)` to install all the necesary libraries used in notebooks.
+* Python Libraries used:
   ```sh
     import pandas                   #data analysis and manipulation tool
     import psycopg2                 #Library for connection to PostgreSQL
@@ -132,6 +130,8 @@ MongoDB Atlas (24/7 availability)
 * vCPU: Shared
 * RAM: Shared
 * Storage: 512 MB
+* [DB dump](Resources/dap_sql_dump.sql)
+
 ### Database 2
 Running on Azure VM (restricted availability, please contact Team before running the notebooks to start VM)
 * DB Engine: PostgreSQL
